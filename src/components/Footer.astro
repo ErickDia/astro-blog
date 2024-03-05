@@ -1,0 +1,23 @@
+---
+import Social from "./Social.astro";
+const platforms = [
+    {
+        name: "github",
+        url: "https://github.com/ErickDia",
+        text: "¡Más información sobre mis proyectos en "
+    },
+    {
+        name: "facebook",
+        url: "https://www.facebook.com/delicias.en.casa.tacna/",
+        text: "¡visita mi "
+
+    }
+];
+---
+
+<footer class="flex gap-4 mt-8">
+    {
+        platforms.map( platform => <Social platform = {platform}/>)
+    }
+    
+</footer>
